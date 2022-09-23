@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AzureCredentials>{"ServiceManagementEndpoint":"https:\/\/management.core.windows.net\/","ResourceManagementEndpoint":"https:\/\/management.azure.com\/","SubscriptionId":"4f27bec7-26bd-40f7-af24-5962a53d921e"}</AzureCredentials>
+    <AzureDeploymentLabel>simpleCSES</AzureDeploymentLabel>
+    <AzureEnableRemoteDesktop>False</AzureEnableRemoteDesktop>
+    <AzureServiceConfiguration>Cloud</AzureServiceConfiguration>
+    <AzureSolutionConfiguration>Release</AzureSolutionConfiguration>
+    <AzureAppendTimestampToDeploymentLabel>True</AzureAppendTimestampToDeploymentLabel>
+    <EnableApplicationInsights>True</EnableApplicationInsights>
+    <AzureRMCloudServiceV2Name>loritestCESE</AzureRMCloudServiceV2Name>
+    <AzureRMCloudServiceV2ResourceGroupName>LORITESTCESE-MIGRATED</AzureRMCloudServiceV2ResourceGroupName>
+    <AzureRMCloudServiceV2Location>{"Name":"westus2","DisplayName":"West US 2"}</AzureRMCloudServiceV2Location>
+    <AzureRMKeyVaultName />
+    <AzureRMKeyVaultResourceGroupName />
+    <AzureRMKeyVaultLocation />
+    <AzureRMStorageAccountName>storagexsd3ulzlim7xg</AzureRMStorageAccountName>
+    <AzureRMStorageAccountResourceGroupName>PaaSDev.L200.Batch.1</AzureRMStorageAccountResourceGroupName>
+    <AzureRMStorageAccountLocation>{"Name":"westus","DisplayName":"West US"}</AzureRMStorageAccountLocation>
+    <AzureRMSwappableCloudServiceV2Name />
+    <AzureRMSwappableCloudServiceV2ResourceGroupName />
+    <AzureRMSwappableCloudServiceV2Location />
+  </PropertyGroup>
+</Project>

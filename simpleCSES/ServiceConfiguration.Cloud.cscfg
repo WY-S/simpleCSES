@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="simpleCSES" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="6" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=abcdefe;AccountKey=$(_abcdefe.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="2971b1d9-8dce-4b51-a77e-94555089e895" />
+    </ConfigurationSettings>
+  </Role>
+  <NetworkConfiguration>
+    <VirtualNetworkSite name="VNet-loritestCESE" />
+    <AddressAssignments>
+      <InstanceAddress roleName="WebRole1">
+        <Subnets>
+          <Subnet name="DefaultVNetSubnet" />
+        </Subnets>
+      </InstanceAddress>
+		<!--
+      <ReservedIPs>
+        <ReservedIP name="IP-loritestCESE" />
+      </ReservedIPs>
+	  -->
+    </AddressAssignments>
+  </NetworkConfiguration>
+</ServiceConfiguration>
